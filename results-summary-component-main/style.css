@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: hsl(221, 100%, 96%);
+}
+
+@font-face {
+    font-family: face;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: extraBold;
+    src: url(assets/fonts/static/HankenGrotesk-ExtraBold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Bold;
+    src: url(assets/fonts/static/HankenGrotesk-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Normal;
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Medio;
+    src: url(assets/fonts/static/HankenGrotesk-Medium.ttf) format(truetype);
+}
+
+/* #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} */
+
+
+#result {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 350px;
+    height: 480px;
+    position: relative;
+    top: 144px;
+    left: 12px;
+    z-index: 1;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+}
+
+#title-result {
+    font-size: 24px;
+}
+
+.low-text {
+    color: hsl(241, 100%, 89%);
+    font-family: Medio;
+
+}
+
+#circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+#number-result{
+    color: hsl(0, 0%, 100%);
+    font-family: extraBold;
+    font-size: 65px;
+}
+
+#total {
+    font-family: Bold;
+    color: rgba(241, 100%, 89%, 0.5);
+}
+
+.space-itens {
+    margin-bottom: 20px; 
+}
+
+#Great {
+    color: hsl(0, 0%, 100%);
+    font-family: Medio;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#paragrafo-result {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-family: Normal;
+    text-align: center;
+}
+
+#summary {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    width: 350px;
+    height: 480px;
+    position: relative;
+    top: 144px;
+    right: 12px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#title-summary {
+    font-size: 24px;
+    font-family: Medio;
+    color: hsl(224, 30%, 27%);
+    margin-top: 10px;
+    position: relative;
+    right: 60px;
+}
+
+.div-classes {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 240px;
+    position: relative;
+    left: 10px;
+}
+
+.images {
+    position: relative;
+    top: 4px;
+    right: 4px;
+    margin-left: 8px;
+}
+
+.p-classes {
+    font-family: Normal;
+    position: relative;
+    bottom: 2px;
+}
+
+/* - Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%) */
+
+#div-red {
+    background-color: hsl(0, 100%, 67%, 0.3);
+    padding: 12px 6px 12px 6px;
+    border-radius: 6px;
+}
+
+#div-yellow {
+    background-color: hsl(39, 100%, 56%, 0.3);
+    padding: 12px 6px 12px 6px;
+    border-radius: 6px;
+    position: relative;
+    bottom: 10px;
+}
+
+#div-green {
+    background-color: hsl(166, 100%, 37%, 0.3);
+    padding: 12px 6px 12px 6px;
+    border-radius: 6px;
+    position: relative;
+    bottom: 18px;
+}
+
+#div-blue {
+    background-color: hsl(234, 85%, 45%, 0.3);
+    padding: 12px 6px 12px 6px;
+    border-radius: 6px;
+    position: relative;
+    bottom: 18px;
+}
+
+#red {
+    color: hsl(0, 100%, 67%);
+}
+#yellow {
+    color: hsl(39, 100%, 56%);
+}
+#green {
+    color: hsl(166, 100%, 37%);
+}
+#blue {
+    color: hsl(234, 85%, 45%);
+}
+
+.number-total-summary .number-result-summary{
+    font-family: Medio;
+    color: black;
+}
+
+.number-total-summary{
+    font-family: Medio;
+    color: hsl(242, 20%, 62%);
+}
+
+#buttom-summary {
+    width: 254px;
+    height: 48px;
+    position: relative;
+    left: 10px;
+    bottom: 14px;  
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-family: Medio;
+    border-radius: 20px;
+}
+
+#buttom-summary:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
